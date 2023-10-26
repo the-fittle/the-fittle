@@ -1,21 +1,27 @@
 {
-  "name": "utils",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --port 3001",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "^13.4.19",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ui": "workspace:*"
-  },
-  "devDependencies": {
-    "ts-config": "workspace:*",
-    "typescript": "^4.5.3"
-  }
+	"name": "utils",
+	"version": "0.11.2",
+	"private": false,
+	"description": "Unstyled components and primitives for building accessible web apps and design systems with SolidJS.",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@solid-primitives/event-listener": "^2.2.14",
+		"@solid-primitives/keyed": "^1.2.0",
+		"@solid-primitives/map": "^0.4.7",
+		"@solid-primitives/media": "^2.2.4",
+		"@solid-primitives/props": "^3.1.8",
+		"@solid-primitives/refs": "^1.0.5",
+		"@solid-primitives/utils": "^6.2.1"
+	},
+	"peerDependencies": {
+		"solid-js": "^1.7.11"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

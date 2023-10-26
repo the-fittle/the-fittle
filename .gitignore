@@ -7,6 +7,10 @@ node_modules
 .DS_Store
 *.pem
 
+# kobalte
+packages/core
+packages/utils
+
 # debug
 pnpm-debug.log*
 
