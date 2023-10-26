@@ -4,8 +4,8 @@
   "description": "all things for solid.js",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev"
+    "build": "turbo build --filter=app",
+    "dev": "turbo dev --filter=app"
   },
   "devDependencies": {
     "ts-config": "workspace:*",

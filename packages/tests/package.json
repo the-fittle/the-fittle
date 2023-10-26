@@ -1,0 +1,17 @@
+{
+	"name": "@kobalte/tests",
+	"version": "0.11.2",
+	"private": false,
+	"description": "Unstyled components and primitives for building accessible web apps and design systems with SolidJS.",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+	},
+	"peerDependencies": {
+		"@solidjs/testing-library": "^0.8.4",
+		"solid-js": "^1.7.11"
+	}
+}
