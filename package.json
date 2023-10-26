@@ -1,17 +1,15 @@
 {
+  "name": "the-fittle",
+  "version": "0.0.0",
+  "description": "all things for solid.js",
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "dev": "turbo run dev"
   },
   "devDependencies": {
-    "eslint": "^8.48.0",
-    "prettier": "^3.0.3",
-    "tsconfig": "workspace:*",
+    "ts-config": "workspace:*",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@8.6.10",
-  "name": "the-solid"
+  "packageManager": "pnpm@8.6.10"
 }
