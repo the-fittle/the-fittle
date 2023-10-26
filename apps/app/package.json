@@ -9,6 +9,10 @@
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
 	},
 	"dependencies": {
+		"@kobalte/core": "workspace:*",
+		"@kobalte/utils": "workspace:*",
+		"solid-firebase": "^0.3.0",
+		"solid-js": "^1.7.8",
 		"ui": "workspace:*"
 	},
 	"devDependencies": {
