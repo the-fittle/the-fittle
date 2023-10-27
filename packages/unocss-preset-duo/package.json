@@ -7,7 +7,7 @@
 	"main": "dist/index.js",
 	"tsup": {},
 	"scripts": {
-		"build": "tsup src --dts",
+		"build": "tsup src --dts --format cjs,esm --minify --out-dir dist --clean",
 		"hello": "echo 'Hello World!'",
 		"cleanup": "rimraf .turbo node_modules dist"
 	},

@@ -8,6 +8,8 @@ Run the following command:
 
 ```sh
 pnpm install
+pnpm build
+pnpm dev
 ```
 
 ## What's inside?
