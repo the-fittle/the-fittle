@@ -1,12 +1,28 @@
 {
   "pipeline": {
-    "hello": {},
-		"cleanup": {},
-		"preview": {},
-		"test": {},
-		"build": {},
-		"lint": {},
+		"hello": {
+			"description": "Hello World"
+		},
+		"//#hello:root": {
+			"description": "Hello World"
+		},
+		"cleanup": {
+			"description": "Runs rimraf to remove dist, node_modules, .turbo, and .cache"
+		},
+		"//#cleanup:root": {
+			"description": "Runs rimraf to remove dist, node_modules, .turbo, and .cache"
+		},
+		"preview": {
+			"description": "Runs the vite preview on all apps"
+		},
+		"test": {
+			"description": "Tests all apps and packages"
+		},
+		"build": {
+			"description": "Builds all apps and packages"
+		},
 		"dev": {
+			"description": "Runs the vite dev server on all apps",
 			"cache": false,
 			"persistent": true
 		}

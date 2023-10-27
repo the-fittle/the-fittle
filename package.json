@@ -8,9 +8,10 @@
 		"dev": "turbo dev",
 		"build": "turbo build",
 		"preview": "turbo preview",
-		"hello": "turbo hello --concurrency=1 & echo 'Hello World!'",
-		"cleanup": "turbo cleanup cleanup:root --concurrency=1 --no-cache",
-		"cleanup:root": "rimraf .turbo node_modules pnpm-lock.yaml"
+		"hello": "turbo run hello --concurrency=1 & echo 'Hello World!'",
+		"//#hello": "echo 'Hello World!'",
+		"cleanup": "turbo cleanup --concurrency=1 --no-cache",
+		"//#cleanup": "rimraf .turbo node_modules pnpm-lock.yaml"
 	},
 	"dependencies": {
 		"solid-js": "^1.8.4"
