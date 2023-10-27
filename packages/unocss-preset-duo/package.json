@@ -1,0 +1,19 @@
+{
+	"name": "unocss-preset-duo",
+	"description": "A preset for unocss with duo core design.",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"main": "dist/index.js",
+	"tsup": {},
+	"scripts": {
+		"build": "tsup src --dts",
+		"hello": "echo 'Hello World!'",
+		"cleanup": "rimraf .turbo node_modules dist"
+	},
+	"devDependencies": {
+		"tsconfig": "workspace:*",
+		"typescript": "^4.5.3",
+		"unocss": "^0.57.1"
+	}
+}

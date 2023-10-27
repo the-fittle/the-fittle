@@ -1,0 +1,10 @@
+{
+	"name": "tsconfig",
+	"version": "1.0.0",
+	"description": "eventually I would like to make this be an all encompassing suite of tools for building solid apps with unocss",
+	"private": true,
+	"scripts": {
+		"hello": "echo 'Hello World!'",
+		"cleanup": "rimraf .turbo node_modules dist"
+	}
+}

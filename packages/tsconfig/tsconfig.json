@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"useDefineForClassFields": true,
+		"module": "esnext",
+		"lib": ["esnext", "dom", "dom.iterable"],
+		"skipLibCheck": true,
+		"strict": true,
+
+		"isolatedModules": true,
+		"noEmit": true,
+		"moduleResolution": "node",
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js",
+
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitAny": false,
+		"noImplicitReturns": false,
+		"noFallthroughCasesInSwitch": true,
+
+		"composite": false,
+		"declaration": true,
+		"declarationMap": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"inlineSources": false,
+		"preserveWatchOutput": true,
+		"strictNullChecks": true
+	},
+	"exclude": ["node_modules"],
+}

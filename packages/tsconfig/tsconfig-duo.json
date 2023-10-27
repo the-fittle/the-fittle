@@ -1,0 +1,10 @@
+{
+	"extends": "tsconfig/tsconfig.json",
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"composite": true,
+		"skipLibCheck": true,
+		"module": "esnext",
+		"allowSyntheticDefaultImports": true
+	},
+}

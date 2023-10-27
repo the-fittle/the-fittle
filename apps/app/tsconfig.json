@@ -1,0 +1,4 @@
+{
+	"extends": "tsconfig/tsconfig-duo.json",
+	"include": ["src", "vite.config.ts"],
+}
