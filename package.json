@@ -1,0 +1,29 @@
+{
+	"name": "the-fittle",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "all things for solid.js",
+	"private": true,
+	"scripts": {
+		"dev": "turbo dev --filter=apps",
+		"preview": "turbo preview --filter=apps",
+		"turbo:build": "turbo cleanup --concurrency=1 --no-cache --no-daemon & turbo build --concurrency=1 --no-cache --no-daemon",
+		"turbo:hello": "turbo hello --concurrency=1 --no-cache --no-daemon",
+		"turbo:cleanup": "turbo cleanup --concurrency=1 --no-cache --no-daemon",
+		"hello": "echo 'Hello World!'",
+		"cleanup": "rimraf .turbo"
+	},
+	"dependencies": {
+		"solid-js": "^1.8.4"
+	},
+	"devDependencies": {
+		"tsconfig": "workspace:*",
+		"rimraf": "^5.0.5",
+		"turbo": "latest",
+		"unocss": "^0.57.1",
+		"unocss-preset-theme": "^0.10.1",
+		"vite": "3.2.7",
+		"vite-plugin-solid": "2.7.0"
+	},
+	"packageManager": "pnpm@8.6.10"
+}

@@ -1,0 +1,42 @@
+{
+  "pipeline": {
+		"turbo:hello": {},
+		"//#hello": { "dependsOn": ["^hello"] },
+		"hello": {},
+
+		"turbo:build": {},
+		"//#build": { "dependsOn": ["^build"] },
+		"build": {
+			"dependOsn": ["cleanup"]
+		},
+
+		"turbo:deploy": {},
+		"//#deploy": { "dependsOn": ["^deploy"] },
+		"deploy": {
+			"dependsOn": ["build", "test", "lint"]
+		},
+
+		"turbo:cleanup": {},
+		"//#cleanup": { "dependsOn": ["^cleanup"] },
+		"cleanup": {},
+
+		"turbo:test": {},
+		"//#test": { "dependsOn": ["^test"] },
+		"test": {
+			"dependsOn": ["build"]
+		},
+
+		"turbo:lint": {},
+		"//#lint": { "dependsOn": ["^lint"] },
+		"lint": {},
+
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"preview": {
+			"cache": false,
+			"persistent": true
+		}
+  }
+}

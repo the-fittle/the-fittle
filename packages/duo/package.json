@@ -1,0 +1,21 @@
+{
+	"name": "duo",
+	"version": "1.0.0",
+	"description": "A Solid & Uno based UI library",
+	"private": true,
+	"type": "module",
+	"main": "dist/index.js",
+	"tsup": {},
+	"scripts": {
+		"build": "tsup src --dts --format cjs,esm --minify --out-dir dist --clean",
+		"hello": "echo 'Hello World!'",
+		"cleanup": "rimraf .turbo dist"
+	},
+	"dependencies": {
+		"solid-js": "^1.7.11"
+	},
+	"devDependencies": {
+		"tsconfig": "workspace:*",
+		"typescript": "^4.5.3"
+	}
+}
